@@ -7,7 +7,7 @@
 // message  [Discord Message Object]    -> Discord message object
 // args     [Array<String>]             -> Array of string passed after command (eg: !ping arg1 arg2)
 module.exports.run = async (bot, message, args) => {
-    const msg = await message.channel.send('!ping');
+    const msg = await message.channel.send('!pong');
     msg.edit(`Pong! Latency is ${msg.createdTimestamp - message.createdTimestamp}ms.`);
 }
 
